@@ -1,0 +1,72 @@
+header {
+  background: $default-color;
+
+  @media (max-width: 480px) {
+    display: grid;
+    padding: 1rem 0;
+    justify-items: stretch;
+  }
+}
+
+header .sign-in {
+  background: $default-color 0% 0% no-repeat padding-box;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  opacity: 1;
+  color: $primary-color;
+  padding: 8px;
+  width: 150px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.3s ease;
+    color: $default-color;
+    background-color: $primary-color;
+  }
+}
+
+header .wp-block-navigation-item__label {
+  font-size: 14px;
+  color: $secondary-color;
+}
+
+header .wp-block-navigation-item:first-child {
+  border-bottom: 2px solid $primary-color;
+  @media (max-width: 480px) {
+    border-bottom: 0;
+  }
+}
+
+header .wp-block-navigation .wp-block-navigation-item {
+  height: 3.5rem;
+
+  @media (max-width: 480px) {
+    height: 0;
+  }
+}
+
+header > div.wp-block-group {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+header ul.wp-block-navigation__container {
+  @media (max-width: 480px) {
+    width: 100% !important;
+    align-items: center !important;
+  }
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  background-color: $secondary-color !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open ul li span {
+  color: $default-color;
+}
+
+header .wp-block-navigation__responsive-container-close svg {
+  color: $default-color;
+}

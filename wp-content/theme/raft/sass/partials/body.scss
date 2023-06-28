@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  margin: 0 !important;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  @media (max-width: 480px) {
+    width: 100% !important;
+  }
+}
+
+.col {
+  @media (max-width: 480px) {
+    flex: 100%;
+    max-width: 100%;
+    padding: 1rem !important;
+  }
+}

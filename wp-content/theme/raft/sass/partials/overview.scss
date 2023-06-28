@@ -1,0 +1,92 @@
+section.overview {
+  background-color: $default-color;
+  padding: 2rem 0;
+}
+
+section.overview .container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+section.overview .custom-row .col,
+section.about-us .custom-row .col {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 1rem;
+
+  @media (max-width: 480px) {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+section.overview .custom-row .custom-image,
+section.about-us .custom-row .custom-image {
+  width: 100%;
+}
+
+section.overview .custom-row h3.section-title,
+section.about-us .custom-row h3.section-title {
+  font-size: 22px;
+}
+
+section.overview .custom-row p {
+  font-size: 14px;
+  color: $secondary-color;
+}
+
+section.overview .custom-row button,
+section.about-us .custom-row button {
+  background: $primary-color 0% 0% no-repeat padding-box;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  opacity: 1;
+  color: $default-color;
+  padding: 8px;
+  width: 170px;
+  height: 50px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.3s ease;
+    color: $primary-color;
+    background-color: $default-color;
+  }
+}
+
+section.about-us .description-container {
+  width: 440px;
+  margin: 0 0 0 auto;
+  padding-right: 3rem;
+
+  @media (max-width: 480px) {
+    width: 100% !important;
+    padding: 0;
+    margin: 0 !important;
+  }
+}
+
+section.about-us {
+  background-color: $secondary-color;
+  margin: 2rem 0;
+}
+
+section.about-us .custom-row .col {
+  padding: 0;
+}
+
+section.about-us .custom-row {
+  align-items: center;
+}
+
+section.about-us .custom-row h3 {
+  color: $default-color;
+}
+
+section.about-us .custom-row p {
+  font-size: 14px;
+  color: $secondary-text-color;
+}
